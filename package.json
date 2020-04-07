@@ -1,0 +1,30 @@
+{
+  "name": "jandrewsnc.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jandrewsnc/jandrewsnc.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jandrewsnc/jandrewsnc.github.io/issues"
+  },
+  "homepage": "https://github.com/jandrewsnc/jandrewsnc.github.io#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.2.1",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
