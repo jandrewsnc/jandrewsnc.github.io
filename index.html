@@ -11,7 +11,7 @@
   <body>
     <div id="fullPage">
       <section id="heroVideo">
-        <video class="background-video" poster="/src/img/video_cover.jpeg" loop muted autoplay srcdesk="/src/vid/night.mp4" srcmob="/src/vid/night-mobile.mp4"></video>
+        <video class="background-video" poster="/src/img/video_cover.jpeg" loop muted autoplay srcdesk="/src/vid/night.mp4" srcmob="/src/vid/night-mobile.mp4" codecs=" H.264/MPEG-4"></video>
         <div class="overlay"></div>
         <div id="video-content">
           <span>Hi, I'm</span>
@@ -23,13 +23,13 @@
         </div>
       </section>
 
-      <section id="about" class="container">
+      <section id="about" class="container fade-in">
         <h2>Lorem ipsum</h2>
         <p class="content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui eligendi ratione ipsa maiores quidem, non illo deserunt quaerat. Eum incidunt quidem, sed modi molestiae velit veniam consequatur mollitia aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur eveniet corporis, vero maiores omnis odit iste sint iure minima. Numquam sit libero maxime similique sed aut pariatur id. Quas, ipsam?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui eligendi ratione ipsa maiores quidem, non illo deserunt quaerat. Eum incidunt quidem, sed modi molestiae velit veniam consequatur mollitia aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur eveniet corporis, vero maiores omnis odit iste sint iure minima. Numquam sit libero maxime similique sed aut pariatur id. Quas, ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui eligendi ratione ipsa maiores quidem, non illo deserunt quaerat. Eum incidunt quidem, sed modi molestiae velit veniam consequatur mollitia aperiam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur eveniet corporis, vero maiores omnis odit iste sint iure minima. Numquam sit libero maxime similique sed aut pariatur id. Quas, ipsam?
         </p>
         <p class="content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, sit nulla consectetur, minima deleniti quis repudiandae, qui tempora minus ipsa delectus fuga unde. Nemo corrupti totam ducimus praesentium, laboriosam inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque incidunt quos sit excepturi pariatur illum nemo ipsum architecto dolorum harum, delectus tempora quibusdam qui voluptatum molestias nostrum omnis recusandae.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, sit nulla consectetur, minima deleniti quis repudiandae, qui tempora minus ipsa delectus fuga unde. Nemo corrupti totam ducimus praesentium, laboriosam inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque incidunt quos sit excepturi pariatur illum nemo ipsum architecto dolorum harum, delectus tempora quibusdam qui voluptatum molestias nostrum omnis recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, sit nulla consectetur, minima deleniti quis repudiandae, qui tempora minus ipsa delectus fuga unde. Nemo corrupti totam ducimus praesentium, laboriosam inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam itaque incidunt quos sit excepturi pariatur illum nemo ipsum architecto dolorum harum, delectus tempora quibusdam qui voluptatum molestias nostrum omnis recusandae.
         </p>
       </section>
     </div>
@@ -37,21 +37,7 @@
     <!-- load bootstrap -->
     <script src="/src/js/jquery.min.js"></script>
     <script src="/src/js/bootstrap.min.js"></script>
-    <!-- <script src="/js/fullpage.js"></script>
-
-    <script>
-      $(document).ready(function() {
-        $('#fullpage').fullpage({
-          //options here
-          autoScrolling:true,
-          scrollHorizontally: true
-        });
-
-        //methods
-        $.fn.fullpage.setAllowScrolling(false);
-      });
-    </script> -->
-
+    
     <!-- dynamically load video source (desktop or mobile) based on screen size -->
     <script>
       let video = document.querySelector("#heroVideo video");
@@ -62,5 +48,21 @@
       let vidSrcMarkup = `<source src="${videoSrc}" type="video/mp4" >`;
       video.innerHTML = vidSrcMarkup;
     </script>
+
+    <script src="/src/js/fadeIn.js"></script>
+
+    <!-- <script>
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          //options here
+          autoScrolling:true,
+          scrollHorizontally: true
+        });
+
+        //methods
+        $.fn.fullpage.setAllowScrolling(false);
+      }); -->
+    </script>
+
   </body>
 </html>
