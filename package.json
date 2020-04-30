@@ -20,7 +20,7 @@
   "dependencies": {
     "@popperjs/core": "^2.2.1",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
